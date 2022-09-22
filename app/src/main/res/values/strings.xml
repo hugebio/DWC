@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">DUMB WAITER CONTROLLER</string>
+    <string name="app_name"> DUMB WAITER CONTROLLER</string>
+    <string name="help">" ▶모드설명
+ - 모드1 : UV 수동 ON, OFF 제어
+ - 모드2 : DOOR가 닫혀있을 경우에만 UV ON
+ - 모드3 : DOOR가 닫혀있을 경우에 LED 10초간 ON
+ - 모드4 : 동작을 완전히 멈추고 휴식 동작일 경우 LED ON
+
+ ※ DOOR가 열릴 경우 LED는 OFF"</string>
 </resources>

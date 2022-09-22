@@ -8,31 +8,67 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imgcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:tag="off"
+            android:src="@drawable/disconnected"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:digits="1234567890."
+            android:layout_marginLeft="10dp"
+            android:hint="Server IP Address"/>
+        <Button
+            android:id="@+id/btnconnect"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="연결"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:gravity="center">
         ">
         <Button
+            android:id="@+id/btnmode1"
             android:layout_width="95dp"
             android:layout_height="80dp"
             android:text="모드1"
             android:textSize="20sp"
             android:layout_marginRight="3dp"/>
         <Button
+            android:id="@+id/btnmode2"
             android:layout_width="95dp"
             android:layout_height="80dp"
             android:layout_marginRight="3dp"
             android:textSize="20sp"
             android:text="모드2"/>
         <Button
+            android:id="@+id/btnmode3"
             android:layout_width="95dp"
             android:layout_height="80dp"
             android:layout_marginRight="3dp"
             android:textSize="20sp"
             android:text="모드3"/>
         <Button
+            android:id="@+id/btnmode4"
             android:layout_width="95dp"
             android:layout_marginRight="3dp"
             android:textSize="20sp"
@@ -44,7 +80,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="30dp">
 
@@ -56,6 +92,7 @@
             android:layout_marginRight="10dp">
 
             <ImageButton
+                android:id="@+id/btnup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/imgbtn_states"
@@ -64,6 +101,7 @@
                 />
 
             <ImageButton
+                android:id="@+id/btndown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btndown"
@@ -87,12 +125,14 @@
                 android:gravity="center">
 
                 <Button
+                    android:id="@+id/btnsterstart"
                     android:layout_width="120dp"
                     android:layout_height="100dp"
                     android:layout_marginRight="10dp"
                     android:textSize="20sp"
                     android:text="살균시작"/>
                 <Button
+                    android:id="@+id/btnsterstop"
                     android:layout_width="120dp"
                     android:layout_height="100dp"
                     android:textSize="20sp"
@@ -105,6 +145,7 @@
                 android:gravity="center"
                 android:layout_marginTop="40dp">
                 <Button
+                    android:id="@+id/btnemer"
                     android:layout_width="250dp"
                     android:layout_height="100dp"
                     android:textSize="30sp"
@@ -115,6 +156,23 @@
 
 
         </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:text="@string/help"/>
 
 
     </LinearLayout>
